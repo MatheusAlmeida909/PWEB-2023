@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="styleCalc.css">
+</head>
+<body>
+    <form>
+        <input id="num1" type="number" placeholder="number">
+        <input id="num2" type="number" placeholder="number">
+        <div>
+            <button id="add"      onclick="calculate('add')" type="button">+</button>
+            <button id="subtract" onclick="calculate('subtract')" type="button">-</button>
+            <button id="multiply" onclick="calculate('multiply')" type="button">x</button>
+            <button id="divide"   onclick="calculate('divide')" type="button">/</button>
+            <button id="square"   onclick="calculate('square')" type="button">x²</button>
+        </div>
+        <input id="answer" type="number" placeholder="result" readonly>
+    </form>
+</body>
+<script src="scriptCalc.js"></script>
+</html>
